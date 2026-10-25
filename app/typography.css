@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --sf: 'Inter', sans-serif;
+  --mono: 'Inter', sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.footer-bottom div > a:first-child {
+  font-family: 'Inter', sans-serif;
+}
+
+body,
+body * {
+  font-weight: 600 !important;
+}

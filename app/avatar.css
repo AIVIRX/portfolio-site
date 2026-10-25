@@ -1,0 +1,62 @@
+.avatar-scene {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-bubble {
+  position: absolute;
+  left: calc(100% + 18px);
+  top: 10px;
+  width: 194px;
+  min-height: 64px;
+  padding: 15px 18px;
+  border: 1px solid #e8e8eb;
+  border-radius: 20px 20px 20px 5px;
+  background: #ffffff;
+  color: #515158;
+  box-shadow: 0 5px 24px #00000008;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  animation: headline-reveal 700ms 1100ms cubic-bezier(.22,1,.36,1) both;
+  transition: border-color 180ms, box-shadow 180ms;
+}
+
+
+.avatar-bubble:hover {
+  border-color: #c7c7cd;
+  box-shadow: 0 6px 26px #00000010;
+}
+
+.avatar-bubble:focus-visible {
+  outline: 2px solid #0a66c2;
+  outline-offset: 4px;
+}
+
+.bubble-message {
+  display: block;
+  animation: headline-reveal 450ms cubic-bezier(.22,1,.36,1) both;
+}
+
+@media (max-width: 720px) {
+  .avatar-bubble {
+    left: 86px;
+    top: -32px;
+    width: 156px;
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .avatar-bubble { left: 68px; width: 142px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-bubble,
+  .bubble-message {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,42 @@
+.hero-socials,
+.footer-bottom > div {
+  align-items: center;
+}
+
+.hero-socials a {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  line-height: 1;
+}
+
+.hero-socials .hero-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.hero-socials a:first-child {
+  font-size: 20px;
+}
+
+.hero-socials a[href="https://www.instagram.com/aivirx"] {
+  background-size: 24px 24px;
+}
+
+.footer-bottom > div > a {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: inline-grid;
+  place-items: center;
+  background-size: 20px 20px;
+}
+
+.footer-bottom .footer-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.footer-bottom .footer-instagram {
+  background-size: 23px 23px;
+}

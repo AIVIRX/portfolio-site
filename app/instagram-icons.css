@@ -1,0 +1,4 @@
+.hero-socials a[href="https://www.instagram.com/aivirx"] {
+  font-size: 0;
+  background: transparent url('/icons/instagram.svg') center / contain no-repeat;
+}

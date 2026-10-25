@@ -1,0 +1,57 @@
+export const projects = [
+  {
+    slug: "dockui",
+    listing: null,
+    image: "/icons/dockui.png",
+    title: "DockUI: Design for SwiftUI",
+    caption: "Design visually, Generate SwiftUI.",
+    dates: "2024 – Present", tone: "purple", icon: "{ }",
+    technologies: ["Swift", "SwiftUI", "JSON", "Code generation"],
+    overview: "A native visual design editor that lets developers compose interfaces graphically and generate production-ready SwiftUI source code.",
+    challenge: "Creating an interface involves translating layout decisions into code. DockUI brings those steps together, allowing developers to select components, edit their properties, and generate SwiftUI without writing each layout manually.",
+    steps: ["Compose an interface", "Edit components visually", "Generate SwiftUI"],
+    sections: [
+      { title: "A structured foundation for visual design", text: "I engineered a dynamic component rendering system that converts structured JSON schemas into interactive SwiftUI view hierarchies. The schema provides a representation of the interface that the renderer can update as design decisions change." },
+      { title: "Direct control over components", text: "Component selection and property editing let developers visually customize their interface layouts. Design updates appear in real time, keeping the editing experience connected to the rendered interface." },
+      { title: "From visual decisions to source code", text: "The editor generates production-ready SwiftUI source code from the visual layout, connecting a graphical workflow to the code developers use to build their apps." },
+    ],
+    result: "A working visual design workflow: compose an interface, customize its components, and generate SwiftUI source code. Development is ongoing.",
+  },
+  {
+    slug: "metadata-translator",
+    listing: "https://apps.apple.com/us/app/metadata-translator-aso/id6739471606",
+    image: null,
+    title: "Metadata Translator: ASO",
+    caption: "App Store localization, streamlined.",
+    dates: "2026 – Present", tone: "orange", icon: "Aa",
+    technologies: ["SwiftUI", "AI translation APIs", "Async networking", "Validation"],
+    overview: "A native SwiftUI app that automates translation of App Store metadata across multiple languages, including names, subtitles, descriptions, keywords, and promotional text.",
+    challenge: "Localizing a store listing means translating several different types of copy while preserving their meaning and marketing intent. I designed the app to streamline that workflow and reduce the manual effort of preparing multilingual listings.",
+    steps: ["Provide store metadata", "Translate across languages", "Validate responses"],
+    sections: [
+      { title: "Translation with context", text: "I integrated AI-powered translation APIs to generate context-aware translations that preserve the original meaning and marketing intent of the listing." },
+      { title: "An asynchronous translation workflow", text: "Asynchronous networking connects the native SwiftUI interface to translation services. The interface brings the different metadata fields together in a focused workflow for preparing localized store listings." },
+      { title: "Handling incomplete results", text: "I built error handling and validation mechanisms to manage API failures and incomplete translation responses, making those failure cases part of the workflow rather than assuming every request succeeds." },
+    ],
+    result: "A native workflow for translating App Store metadata across languages, with validation and error handling around API responses. Development is ongoing.",
+  },
+  {
+    slug: "string-catalog-translate",
+    listing: "https://apps.apple.com/us/app/string-catalog-translate/id6761640833?mt=12",
+    image: "/icons/string-catalog.png",
+    title: "String Catalog - Translate",
+    caption: "Bring your app to more languages.",
+    dates: "2026 – Present", tone: "blue", icon: "文",
+    technologies: ["SwiftUI", "Xcode String Catalogs", "AI translation"],
+    overview: "A SwiftUI application that processes Xcode String Catalog (.xcstrings) files and generates AI-powered translations across multiple languages.",
+    challenge: "App localization involves translating the interface strings managed in an Xcode project. This app focuses on the String Catalog file itself, connecting that format to a multilingual translation workflow.",
+    steps: ["Process a String Catalog", "Generate AI translations", "Support multiple languages"],
+    sections: [
+      { title: "Built around Xcode String Catalogs", text: "The app processes .xcstrings files, the String Catalog format used in Xcode projects. Working with the catalog makes the project’s interface strings the starting point for translation." },
+      { title: "AI-assisted localization", text: "I developed the app in SwiftUI to generate AI-powered translations across multiple languages, focusing this project on in-app strings rather than App Store marketing metadata." },
+    ],
+    result: "A SwiftUI app for processing Xcode String Catalog files and generating multilingual translations. Development is ongoing.",
+  },
+];
+
+export type Project = (typeof projects)[number];

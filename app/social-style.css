@@ -1,0 +1,13 @@
+.hero-socials a,
+.footer-bottom .footer-icon {
+  background-color: transparent !important;
+  border-radius: 0;
+}
+
+.hero-socials a {
+  color: #171717;
+}
+
+.hero-socials a:first-child {
+  color: #0a66c2;
+}

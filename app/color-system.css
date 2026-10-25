@@ -1,0 +1,38 @@
+.site-frame {
+  margin: 0;
+}
+
+.glance {
+  width: calc(100% - 240px);
+  padding-inline: 0;
+}
+
+@media (max-width: 720px) {
+  .site-frame {
+    margin: 0;
+  }
+
+  .glance {
+    width: calc(100% - 48px);
+    padding-inline: 0;
+  }
+}
+
+body,
+.nav,
+.about,
+.bits,
+footer {
+  background: #ffffff;
+}
+
+.nav {
+  border-bottom: 0;
+}
+
+.marquee {
+  background: #ffffff;
+  color: var(--ink);
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
