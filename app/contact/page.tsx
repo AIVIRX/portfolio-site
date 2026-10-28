@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import styles from "../privacy-policy/privacy-policy.module.css";
+import styles from "../sober-tracker/privacy-policy/privacy-policy.module.css";
 import contact from "./contact.module.css";
 
 export const metadata: Metadata = {
